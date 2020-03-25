@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm link
-    - run: cd example %% npm install --save --verbose
+    - run: cd example && npm install --save --verbose
     - run: npm test
       env:
         CI: true
