@@ -24,7 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install jverification-react-native --save
+    - run: npm install jverification-react-native --save --verbose
     - run: npm test
       env:
         CI: true
