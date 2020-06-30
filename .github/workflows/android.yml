@@ -17,6 +17,12 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Run Gradle command
+      uses: Raul6469/android-gradle-action@2.0.0
+      with:
+        # The gradle command you wish to run (required)
+        # Here, `./gradlew test` will be run
+        script: test
     - uses: eskatos/gradle-command-action@v1
       with:
         gradle-version: 6.5
